@@ -88,10 +88,4 @@ namespace SysManager.Common.Utilities
         }
 
     }
-
-
-    public abstract class DateTimeFormat
-    {
-        public abstract string FormatDateTime(DateTime? datetime);
-    }
 }

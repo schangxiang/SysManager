@@ -27,7 +27,7 @@ namespace SysManager.Common.Utilities
     /// </summary>
     public sealed class CommonHelper
     {
-       
+
 
         /// <summary>
         /// 对象互转
@@ -43,7 +43,7 @@ namespace SysManager.Common.Utilities
         }
 
         /// <summary>
-        /// List<T>转换DataTable
+        /// List转换DataTable
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>

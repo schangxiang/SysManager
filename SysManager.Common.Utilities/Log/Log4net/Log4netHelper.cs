@@ -25,10 +25,11 @@ namespace SysManager.Common.Utilities
     public sealed class Log4netHelper
     {
         /// <summary>
-        /// 输出异常日志到Log4Net
+        ///  输出异常日志到Log4Net
         /// </summary>
-        /// <param name="t"></param>
-        /// <param name="msg"></param>
+        /// <param name="t">类型</param>
+        /// <param name="msg">错误信息</param>
+        /// <param name="ex">异常对象</param>
         public static void WriteErrorLogByLog4Net(Type t, string msg, Exception ex = null)
         {
             log4net.ILog log = log4net.LogManager.GetLogger(t);

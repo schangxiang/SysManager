@@ -41,7 +41,7 @@ namespace SysManager.Common.Utilities
         /// <summary>
         /// 获取枚举的描述属性
         /// </summary>
-        /// <param name="enumValue">枚举值</param>
+        /// <param name="en">枚举值</param>
         /// <returns>枚举的描述属性</returns>
         public static string GetEnumDescription(Enum en)
         {
