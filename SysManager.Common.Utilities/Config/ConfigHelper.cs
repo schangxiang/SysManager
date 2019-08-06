@@ -36,10 +36,14 @@ namespace SysManager.Common.Utilities
             try
             {
                 value = ConfigurationManager.AppSettings[key].ToString().Trim();
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("获取配置信息异常,可能不存在该配置或者为空,configKey:" + key + ",configValue:" + Convert.ToString(value));
+                }
             }
-            catch (Exception)
+            catch
             {
-                throw new Exception("配置文件中找不到【" + key + "】节点");
+                throw;
             }
             return value;
         }
