@@ -1,3 +1,7 @@
 /SysManager.Common.Utilities/obj
 /SysManager.Common.Utilities/bin
 /packages
+/SysManager.Common.Models/obj
+/SysManager.Common.Models/bin
+/SysManager.DB.Utilities/obj
+/SysManager.DB.Utilities/bin
