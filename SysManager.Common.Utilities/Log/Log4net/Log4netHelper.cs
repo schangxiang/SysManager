@@ -24,6 +24,12 @@ namespace SysManager.Common.Utilities
     /// </summary>
     public sealed class Log4netHelper
     {
+		static LogHelper()
+        {
+            //注意：使用log4必须要加上这句，不然log4不起作用
+            log4net.Config.XmlConfigurator.Configure();
+        }
+
         /// <summary>
         ///  输出异常日志到Log4Net
         /// </summary>
