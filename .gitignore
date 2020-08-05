@@ -5,3 +5,5 @@
 /SysManager.Common.Models/bin
 /SysManager.DB.Utilities/obj
 /SysManager.DB.Utilities/bin
+/SysManager.Common.UnitTest/obj
+/SysManager.Common.UnitTest/bin

@@ -32,6 +32,9 @@
     <DocumentationFile>bin\Release\SysManager.Common.Utilities.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\CommonDlls\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
     </Reference>
@@ -50,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections.Extensions\CollectionExtensions.cs" />
     <Compile Include="Config\ConfigHelper.cs" />
     <Compile Include="Encrypt\DESEncryptHelper.cs" />
     <Compile Include="DotNetCode\CommonHelper.cs" />
@@ -57,8 +61,14 @@
     <Compile Include="DotNetCode\EnumHelper.cs" />
     <Compile Include="DotNetCode\StringHelper.cs" />
     <Compile Include="DotNetCode\UnixTimeStampHelper.cs" />
+    <Compile Include="Exports\EpPlusExcelExporterBase.cs" />
+    <Compile Include="Exports\Excel.cs" />
+    <Compile Include="Exports\ExcelExporter.cs" />
+    <Compile Include="Exports\ExcelImporter.cs" />
+    <Compile Include="Exports\ImportExcel.cs" />
     <Compile Include="Http\HTTPHelper.cs" />
     <Compile Include="Log\Log4net\Log4netHelper.cs" />
+    <Compile Include="Log\TextLogger.cs" />
     <Compile Include="Mail\SMTPHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
